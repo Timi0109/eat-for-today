@@ -1,70 +1,44 @@
-import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
-
-import Home from "./Home/Home.jsx";
-import Foo from "./Foo/Foo.jsx";
-import Bar from "./Bar/Bar.jsx";
-import Baz from "./Baz/Baz.jsx";
-import Error from "./Error/Error.jsx";
-
-// here is some external content. look at the /baz route below
-// to see how this content is passed down to the components via props
-const externalContent = {
-  id: "article-1",
-  title: "An Article",
-  author: "April Bingham",
-  text: "Some text in the article",
-};
+import './App.css';
+import React from "react"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from  "./components/HomePage/HomePage";
+import RecipePage from './components/RecipePage/RecipePage';
+import Authentication from './components/AuthenticationPage/Authentication';
+import MyAccount from './components/MyAccountPage/MyAccount';
+import RecipeDetail from './components/RecipePage/RecipeDetail';
+import NoMatch from "./components/NoMatch";
+import RecipeList from "./components/RecipePage/RecipeList";
 
 function App() {
   return (
-    <>
-      <header>
-        <nav>
-          <ul>
-            {/* these links should show you how to connect up a link to a specific route */}
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/foo">Foo</Link>
-            </li>
-            <li>
-              <Link to="/bar/hats/sombrero">Bar</Link>
-            </li>
-            <li>
-              <Link to="/baz">Baz</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/foo" exact component={Foo} />
-        {/* passing parameters via a route path */}
-        <Route
-          path="/bar/:categoryId/:productId"
-          exact
-          render={({ match }) => (
-            // getting the parameters from the url and passing
-            // down to the component as props
-            <Bar
-              categoryId={match.params.categoryId}
-              productId={match.params.productId}
-            />
-          )}
-        />
-        <Route
-          path="/baz"
-          exact
-          render={() => <Baz content={externalContent} />}
-        />
-        <Route component={Error} />
-      </Switch>
-    </>
+    <div className="App">
+      <Router>
+        <Switch>
+          <Route path="/" exact>
+           <HomePage></HomePage>
+          </Route>
+          <Route path="/recipes" exact>
+            <RecipePage></RecipePage>
+          </Route>
+          <Route path="/recipe-list" exact>
+            <RecipeList></RecipeList>
+          </Route>
+          <Route path="/recipe-list/">
+            <RecipeDetail></RecipeDetail>
+          </Route>
+          <Route path="/login" exact>
+            <Authentication></Authentication>
+          </Route>
+          <Route path="/login/">
+            <MyAccount></MyAccount>
+          </Route>
+          <Route component={NoMatch}>
+          </Route>
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
 export default App;
+

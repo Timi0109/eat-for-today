@@ -1,0 +1,89 @@
+.contentContainer{
+    width: 80%;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.listContainer{
+    background-color: #f3bad6;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.outerRecipeContainer{
+    height: 1000px;
+    width: 99%;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+    overflow: scroll;
+}
+
+
+.recipeContainer{
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.title{
+    width: 100%;
+}
+
+.recipeName{
+    font-size: 35px;
+    font-weight: bold;
+    color: #ea86b6;
+}
+
+.link{
+    text-decoration: none;
+    text-align: left;
+}
+
+
+.meat, .veggies{
+    color: rgb(114, 113, 113);
+}
+
+.veggies:hover{
+    color: #ea86b6;
+}
+.meat:hover{
+    color: #ea86b6;
+}
+
+.recipeImg{
+    margin-left: 20px;
+    margin-top: 40px;
+    width: 50%;
+    border: solid 1px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    color: silver;
+    margin-right: 40px;
+    float: left;
+}
+
+.searchInput{
+    background-color: transparent;
+    width: 98%;
+    margin-top: 20px;
+    height: 40px;
+    outline: none;
+    padding-left: 20px;
+    border: 0px;
+    font-size: large;
+}
+
+hr{
+    border: solid 1px;
+    border-bottom: none;
+    color: pink;
+}
+

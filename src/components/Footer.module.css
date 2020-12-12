@@ -1,0 +1,28 @@
+.footer{
+    margin-top: 200px;
+    height: 300px;
+    width: 100%;
+    background-color: palevioletred;
+    color: white;
+}
+
+.subTitle{
+    font-weight: bold;
+}
+
+.title{
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+.right{
+    margin-top: 40px;
+    text-align: center;
+}

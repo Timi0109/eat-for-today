@@ -1,0 +1,251 @@
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+.MenuBar{
+    float: right;
+}
+
+
+.title{
+    color: #f06292;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 40px;
+    border: 2px solid  #f3bad6;
+    
+}
+.kichenImg{
+    /* margin-top: 10px; */
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    background-image: url("../../assets/1607637382242.jpg");
+    height: 300px;
+}
+
+
+.formContainer{
+    margin-top: 40px;
+    background-color: #f3bad6;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.innerformContainer{
+    width: 98%;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+
+.meat, .vegetables, .others{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.allergy{
+    margin-bottom: 40px;
+    width: 80%;
+    
+}
+
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.icon{
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 120px;
+    height: 120px;
+}
+
+.dotContainer{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 20px;
+    border: 1px solid #bbb;
+}
+
+.dotEmpty{
+    height: 5px;
+    width: 5px;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.icon:hover{
+    width: 140px;
+    height: 140px;
+    transition: 0.3s;
+}
+
+.foodInput{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 8px;
+    border-color: silver;
+    
+}
+
+.qtInput{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 8px;
+    border-color: silver;
+   
+}
+
+.foodLabel{
+    margin-right: 5px;
+    text-align: left;
+    display:inline-block;  
+    color:  rgb(82, 80, 80);
+    /* font-weight: 600; */
+    width: 70px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.foodLabelOpen{
+    text-align: left;
+    display:inline-block;  
+    width: 80px;
+    color: palevioletred;
+    font-weight: 600;
+}
+
+.qtLabel{
+    margin-left:20px;
+    margin-right: 5px; 
+    text-align: left;
+    display:inline-block;  
+    color:  rgb(82, 80, 80);
+    /* font-weight: 600; */
+    font-family: 'Cabin', sans-serif;
+}
+
+
+
+.saucesContainer{
+    margin-top: 100px;
+    margin-left: 25%;
+    margin-right: 5%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.saucesLabel{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 120px;
+    text-align: left;
+    display:inline-block;  
+    color: rgb(82, 80, 80);
+    font-family: 'Cabin', sans-serif;
+    /* font-weight: 600; */
+}
+
+.sauceInput{
+    margin-left: 5px;
+    border-color: palevioletred;
+}
+
+.submitContainer{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+  
+
+
+button{
+    margin-top: 40px;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+select{
+    margin-left: 5px;
+    height: 35px;
+    margin-bottom: 1em;
+    padding: .25em;
+    border: 0;
+    border-bottom: 2px solid currentcolor; 
+    /* font-weight: bold; */
+    letter-spacing: .15em;
+    border-radius: 0;
+    color: gray;
+    border-bottom-color: #f3bad6;
+    
+}
+select:focus, select:active {
+    outline: 0;
+    border-bottom-color: #f3bad6;
+}
+
+.formBtn {
+    color: #f06292;
+    width: 200px;
+    height: 49px;
+    border-radius: 1em;
+    font-size: 14px;
+    background-color: transparent;
+    font-weight: bold;
+    border-color: #f3bad6;
+    outline: none;
+}
+  
+.formBtn:hover{
+    background-color: #f06292;
+    color: white;
+}
+
+
+
+@media (max-width: 600px){
+    .kichenImg{
+      display: none;
+    }
+  }
+  
+  @media (max-width: 1400px){
+    .kichenImg {
+      display: none;
+    }
+  }

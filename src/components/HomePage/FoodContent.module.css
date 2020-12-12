@@ -1,0 +1,91 @@
+.foodContainer{
+    text-align: center;
+    margin-top: 5rem;
+    width: auto;
+    height: auto;
+    display: grid;
+    margin-left: 15%;
+    grid-template-columns: 25% 25% 40% 10%; 
+}
+
+.randContainer{
+    text-align: center;
+    margin-top: 15rem;
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: 100%;
+    
+}
+
+.arrowIcon{
+    margin-top: 15rem;
+    margin-left: auto;
+    margin-right: auto; 
+    color: #f06292;
+}
+
+.choosedFoodContainer{
+    border: 2px dotted pink;
+    font-size: 24px;
+    margin-top: 8rem;
+}
+
+.foodName{
+    font-size: 30px;
+    color: gray;
+    font-weight: bold;
+}
+
+.pickedFood{
+    width: 100%;
+    height: auto;
+}
+
+.pickedFoodGif{
+    width: 100%;
+    height: auto;
+    
+}
+
+.pickFoodBtn {
+    color: #f06292;
+    width: 200px;
+    height: 49px;
+    border-radius: 1em;
+    font-size: 14px;
+    background-color: transparent;
+    font-weight: bold;
+    border-color: #f3bad6;
+    outline: none;
+    margin-top: 20px;
+}
+  
+.pickFoodBtn:hover{
+    background-color: #f06292;
+    color: white;
+    outline: none;
+}
+
+.tips{
+    margin-top: 30px;
+    color: #f06292;
+    font-weight: bold;
+    
+}
+
+.foodSet{
+  height: 100%;
+  float: left;
+  opacity: 0.6;
+  width: 100%;
+}
+
+@media (max-width: 980px){
+    .arrowIcon{
+        display: none;
+    }
+    .foodContainer{
+        display: flex;
+        flex-direction: column;
+    }
+  }

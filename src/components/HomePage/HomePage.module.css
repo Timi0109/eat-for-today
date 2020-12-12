@@ -1,0 +1,74 @@
+.homePage{
+  background-image: url("https://cdn.dribbble.com/users/1012997/screenshots/14086465/hunger-station-dribbble_4x.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.header{
+  height: 100px;
+  width: 100%;
+}
+
+.container{
+  height: 700px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pageTitleContainer{
+  margin-top: 100px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  position: relative;
+}
+
+.pagetitle{
+  position: absolute;
+  color: #e05297;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  bottom: 80px;
+  left: 28%;
+
+}
+
+.pagetitleTwo{
+  position: absolute;
+  color: #e05297;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  bottom: 10px;
+  left: 37%;
+}
+
+
+
+
+@media (max-width: 400px){
+  .pagetitle{
+    visibility: hidden;
+  }
+  .pagetitleTwo{
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1400px){
+  .pagetitle{
+    visibility: hidden;
+  }
+  .pagetitleTwo{
+    visibility: hidden;
+  }
+}

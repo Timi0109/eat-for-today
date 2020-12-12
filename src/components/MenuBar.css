@@ -1,0 +1,33 @@
+.Nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 1rem;
+  float: right;
+}
+
+
+
+.Nav-child:hover {
+  transform: scale(1.1);
+}
+
+.Nav-child{
+  font-size: 30px;
+  font-weight: 600;
+  transition: 0.5s;
+  text-decoration: none;
+  flex: 1;
+  color: #f06292;
+  margin: 20px;
+}
+
+
+@media (max-width: 700px) {
+  .Nav {
+    flex-flow: column wrap;
+  }
+  
+}
+
