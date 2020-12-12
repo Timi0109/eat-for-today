@@ -33,3 +33,9 @@
    
    
 }
+
+@media (max-width: 600px){
+    .titleContainer{
+        margin-top: 200px;
+    }
+  }

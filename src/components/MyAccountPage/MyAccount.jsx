@@ -31,8 +31,12 @@ const MyAccount = () => {
             </header>
             <div className={styles.historyContianer}>
                 <div className={styles.historyinnterContainer}>
-                    <p className={styles.history}>Welcome Back,</p>
-                    <p className={styles.historyTwo}>{location.state.name}</p>
+                    <div className={styles.inline}>
+                        <p className={styles.history}>Welcome Back,</p>
+                    </div>
+                    <div className={styles.inlineTwo}>
+                        <p className={styles.historyTwo}>{location.state.name}</p>
+                    </div>
                 </div>
             </div>
              <RecipeContent food={[]} recipes={fetchedData}></RecipeContent>

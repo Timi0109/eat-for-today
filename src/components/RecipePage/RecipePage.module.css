@@ -50,18 +50,33 @@
 }
 
 
-.meat, .vegetables, .others{
+.meat, .vegetables, .others, .allergy{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
     margin-top: 60px;
 }
-
-.allergy{
-    margin-bottom: 40px;
-    width: 80%;
-    
+.al{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
+
+
+.inputContainer{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+   
+}
+
+/* .allergy{
+    width: 100%;
+    column-count: 2;
+   
+    margin-bottom: 60px;
+    margin-top: 60px;
+} */
 
 
 .icons{
@@ -160,22 +175,20 @@
 
 .saucesContainer{
     margin-top: 100px;
-    margin-left: 25%;
-    margin-right: 5%;
-    width: 70%;
+    margin-left: 30%;
+    margin-right: 20%;
+    width: 50%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 .saucesLabel{
-    margin-right: 20px;
     margin-bottom: 20px;
     width: 120px;
     text-align: left;
     display:inline-block;  
     color: rgb(82, 80, 80);
     font-family: 'Cabin', sans-serif;
-    /* font-weight: 600; */
 }
 
 .sauceInput{
@@ -244,8 +257,37 @@ select:focus, select:active {
     }
   }
   
+  @media(max-width: 960px){
+    .inputContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .foodInput{
+        margin-bottom: 20px;
+    }
+    .qtInput{
+        margin-bottom: 20px;
+    }
+    .foodLabel{
+        margin-bottom: 10px;
+    }
+    .qtLabel{
+        margin-bottom: 10px;
+    }
+    select{
+        width: 40%;
+    }
+  }
   @media (max-width: 1400px){
     .kichenImg {
       display: none;
+    }
+    .saucesContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .icons{
+        isplay: flex;
+        flex-direction: column;
     }
   }

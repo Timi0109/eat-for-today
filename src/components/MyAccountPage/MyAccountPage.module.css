@@ -69,3 +69,16 @@
     top: 50%;
     left: 35%;
 }
+
+
+@media (max-width: 600px){
+    .inlineTwo{
+        display: none;
+    }
+    .inline{
+        display: inline;
+    }
+    .historyContianer{
+        margin-top: 200px;
+    }
+  }

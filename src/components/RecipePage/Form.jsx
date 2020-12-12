@@ -10,12 +10,12 @@ import Sauces from "./Sauces";
 
 const Form = () => {
     const [food, setFood] = useState({});
-    const [hasAllergy, setAllergy] = useState(false);
+    const [allergy, setAllergy] = useState(null);
     const [foodQt, setFoodQt] = useState(0);
     const [veggiesQt, setveggiesQt] = useState(0);
     const [othersQt, setOthersQt] = useState(0);
     const [idx, setIdx] = useState(0);
-
+    const [allergyQt,setAllergyQt] = useState(0);
 
     let history = useHistory();
 
@@ -57,17 +57,29 @@ const Form = () => {
             <div className={styles.kichenImg}></div>
                 <form className={styles.formContainer} onSubmit={e => handleSubmit(e)}>
                     <div className={styles.innerformContainer}>
-                        <Meat food={food} setFood={setFood} setFoodQt={setFoodQt}></Meat>
-                        <Vegetables food={food} setFood={setFood} setveggiesQt={setveggiesQt}></Vegetables>
-                        <OtherFood food={food} setFood={setFood} setOthersQt={setOthersQt}></OtherFood>
+                        {/* <div className={styles.gridForm}> */}
+                            <Meat food={food} setFood={setFood} setFoodQt={setFoodQt}></Meat>
+                            <Vegetables food={food} setFood={setFood} setveggiesQt={setveggiesQt}></Vegetables>
+                            <OtherFood food={food} setFood={setFood} setOthersQt={setOthersQt}></OtherFood>
 
-                        <div className={styles.allergy}>
-                            <div className={styles.inputContainer}>
-                                <label className={styles.foodLabel}>Allergy</label>
-                                <input className={styles.foodInput} placeholder="Enter name"></input>
+                            <div className={styles.allergy}>
+                                <div className={styles.inputContainer}>
+                                    
+                                        
+                                        <label className={styles.foodLabel}>Allergy</label>
+                                        <input className={styles.foodInput} placeholder="Enter name" onChange={e => setAllergy(e.target.value)}></input>
+                                        <label className={styles.qtLabel}>Qt</label>
+                                        <input  className={styles.qtInput} placeholder="Enter quantity" onChange={e => setAllergyQt(e.target.value)}></input>
+                                        <select>
+                                            <option value="g">g</option>
+                                            <option value="kg">kg</option>
+                                            <option value="lbs">lbs</option>
+                                            <option value="lb">lb</option>
+                                        </select>
+
+                                </div>
                             </div>
-                        </div>
-
+                        {/* </div> */}
                         <Sauces></Sauces>
                         <div className={styles.submitContainer} >
                             <input className={styles.formBtn} type="submit" value="Submit" />
