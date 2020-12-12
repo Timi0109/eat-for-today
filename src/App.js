@@ -14,22 +14,22 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/" exact>
+          <Route path="/seainfo6150-final-project-webapp" exact>
            <HomePage></HomePage>
           </Route>
-          <Route path="/recipes" exact>
+          <Route path="/seainfo6150-final-project-webapp/recipes" exact>
             <RecipePage></RecipePage>
           </Route>
-          <Route path="/recipe-list" exact>
+          <Route path="/seainfo6150-final-project-webapp/recipe-list" exact>
             <RecipeList></RecipeList>
           </Route>
-          <Route path="/recipe-list/">
+          <Route path="/seainfo6150-final-project-webapp/recipe-list/">
             <RecipeDetail></RecipeDetail>
           </Route>
-          <Route path="/login" exact>
+          <Route path="/seainfo6150-final-project-webapp/login" exact>
             <Authentication></Authentication>
           </Route>
-          <Route path="/login/">
+          <Route path="/seainfo6150-final-project-webapp/login/">
             <MyAccount></MyAccount>
           </Route>
           <Route component={NoMatch}>
