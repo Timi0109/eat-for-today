@@ -17,20 +17,15 @@ function App() {
            <HomePage></HomePage>
           </Route>
           <Route path="/recipes" exact component={RecipePage} />
-          {/* <RecipePage></RecipePage> */}
-          {/* </Route> */}
-          <Route path="/recipe-list" exact>
-            <RecipeList></RecipeList>
-          </Route>
-          <Route path="/recipe-list/">
-            <RecipeDetail></RecipeDetail>
-          </Route>
-          <Route path="/login" exact>
-            <Authentication></Authentication>
-          </Route>
-          <Route path="/login/">
-            <MyAccount></MyAccount>
-          </Route>
+    
+          <Route path="/recipe-list" exact component={RecipeList} />
+        
+          <Route path="/recipe-list/" component={RecipeDetail} />
+            
+          <Route path="/login" exact component={Authentication} />
+            
+          <Route path="/login/" component={MyAccount} />
+            
           <Route component={NoMatch}>
           </Route>
         </Switch>

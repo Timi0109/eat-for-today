@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sauces tests renders correctly 1`] = `
+<div>
+  <div
+    class="saucesContainer"
+  >
+    <label
+      class="saucesLabel"
+    >
+      Soy Sauce
+      <input
+        class="sauceInput"
+        type="checkbox"
+      />
+    </label>
+    <label
+      class="saucesLabel"
+    >
+      Sweet Sauce
+      <input
+        class="sauceInput"
+        type="checkbox"
+      />
+    </label>
+    <label
+      class="saucesLabel"
+    >
+      Spicy Sauce
+      <input
+        class="sauceInput"
+        type="checkbox"
+      />
+    </label>
+    <label
+      class="saucesLabel"
+    >
+      Salad Sauce
+      <input
+        class="sauceInput"
+        type="checkbox"
+      />
+    </label>
+    <label
+      class="saucesLabel"
+    >
+      Salt
+      <input
+        class="sauceInput"
+        type="checkbox"
+      />
+    </label>
+    <label
+      class="saucesLabel"
+    >
+      Oil
+      <input
+        class="sauceInput"
+        type="checkbox"
+      />
+    </label>
+    <label
+      class="saucesLabel"
+    >
+      Butter
+      <input
+        class="sauceInput"
+        type="checkbox"
+      />
+    </label>
+  </div>
+</div>
+`;

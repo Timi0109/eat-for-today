@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeContent tests renders correctly 1`] = `
+<div>
+  <div
+    class="contentContainer"
+  >
+    <input
+      class="searchInput"
+      placeholder="Search by name"
+    />
+    <hr />
+    <div
+      class="listContainer"
+    >
+      <div
+        class="outerRecipeContainer"
+      >
+        <div
+          class="interListContainer"
+        >
+          <div
+            class="recipeContainer"
+          >
+            <a
+              class="link"
+              href="/recipe-list/Beef and Broccoli Lo Mein"
+            >
+              <img
+                alt="recipe img"
+                class="recipeImg"
+                src="https://img.buzzfeed.com/buzzfeed-static/static/2020-04/7/14/asset/af2b435023ab/sub-buzz-265-1586268288-7.jpg"
+              />
+            </a>
+            <a
+              class="link"
+              href="/recipe-list/Beef and Broccoli Lo Mein"
+            >
+              <div
+                class="title"
+              >
+                <p
+                  class="recipeName"
+                >
+                  Beef and Broccoli Lo Mein
+                </p>
+                <p
+                  class="meat"
+                >
+                  Meat: 
+                  Beef
+                </p>
+                <p
+                  class="veggies"
+                >
+                  Veggies: 
+                  Brocoli
+                </p>
+              </div>
+            </a>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
