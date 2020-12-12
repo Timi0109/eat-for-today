@@ -286,8 +286,12 @@ select:focus, select:active {
         display: flex;
         flex-direction: column;
     }
+    
+  }
+
+  @media (max-width: 600px){
     .icons{
-        isplay: flex;
+        display: flex;
         flex-direction: column;
     }
   }
