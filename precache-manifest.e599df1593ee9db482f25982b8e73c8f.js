@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8b73f93f89a569015ee646bcfed76027",
+    "revision": "d169ec967485207ce367e47af3e191cd",
     "url": "/seainfo6150-final-project-webapp/index.html"
   },
   {
-    "revision": "95961c60eb0c64c69804",
+    "revision": "24491d9446c9a78ebe87",
     "url": "/seainfo6150-final-project-webapp/static/css/main.021f0fe5.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/seainfo6150-final-project-webapp/static/js/2.a3408d51.chunk.js"
   },
   {
-    "revision": "95961c60eb0c64c69804",
-    "url": "/seainfo6150-final-project-webapp/static/js/main.001941e7.chunk.js"
+    "revision": "24491d9446c9a78ebe87",
+    "url": "/seainfo6150-final-project-webapp/static/js/main.a3c2c85b.chunk.js"
   },
   {
     "revision": "940ec4a42937c37ae625",
