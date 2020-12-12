@@ -14,26 +14,26 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/seainfo6150-final-project-webapp" exact>
+          <Route path="/" exact>
            <HomePage></HomePage>
           </Route>
-          <Route path="/seainfo6150-final-project-webapp/recipes" exact>
+          <Route path="/recipes" exact>
             <RecipePage></RecipePage>
           </Route>
-          <Route path="/seainfo6150-final-project-webapp/recipe-list" exact>
+          <Route path="/recipe-list" exact>
             <RecipeList></RecipeList>
           </Route>
-          <Route path="/seainfo6150-final-project-webapp/recipe-list/">
+          <Route path="/recipe-list/">
             <RecipeDetail></RecipeDetail>
           </Route>
-          <Route path="/seainfo6150-final-project-webapp/login" exact>
+          <Route path="/login" exact>
             <Authentication></Authentication>
           </Route>
-          <Route path="/seainfo6150-final-project-webapp/login/">
+          <Route path="/login/">
             <MyAccount></MyAccount>
           </Route>
-          <Route component={NoMatch}>
-          </Route>
+          {/* <Route component={NoMatch}>
+          </Route> */}
         </Switch>
       </Router>
     </div>
