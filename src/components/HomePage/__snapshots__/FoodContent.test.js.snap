@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FoodContent tests renders correctly 1`] = `
+<div>
+  <div
+    class="foodContainer"
+  >
+    <div
+      class="randContainer"
+    >
+      <button
+        class="pickFoodBtn"
+      >
+        Pick Food
+      </button>
+      <p
+        class="tips"
+      >
+        No idea what eat today? Let's pick randomly!
+      </p>
+    </div>
+    <svg
+      class="arrowIcon"
+      fill="currentColor"
+      height="96"
+      viewBox="0 0 16 16"
+      width="96"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <div
+      class="choosedFoodContainer"
+    >
+      <img
+        alt="header png"
+        class="pickedFoodGif"
+        src="https://i.pinimg.com/originals/f0/ca/90/f0ca90dd6924e009d86f4421cf2032b5.gif"
+      />
+    </div>
+  </div>
+</div>
+`;

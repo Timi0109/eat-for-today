@@ -12,7 +12,7 @@ import RecipeList from "./components/RecipePage/RecipeList";
 function App() {
   return (
     <div className="App">
-     
+      
         <Switch>
           <Route path="/" exact>
            <HomePage></HomePage>
@@ -32,8 +32,8 @@ function App() {
           <Route path="/login/">
             <MyAccount></MyAccount>
           </Route>
-          {/* <Route component={NoMatch}>
-          </Route> */}
+          <Route component={NoMatch}>
+          </Route>
         </Switch>
       
     </div>

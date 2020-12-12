@@ -6,7 +6,7 @@ import {useHistory} from "react-router-dom";
 import { TextField } from '@material-ui/core';
 import Footer from "../Footer.jsx";
 
-const LoginPage = () => {
+const Authentication = () => {
   const [page, setPage] = useState({ isLoginPage: true });
   const [email, setEmail] = useState();
   const [password, setPassWord] = useState();
@@ -82,4 +82,6 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+
+
+export default Authentication;

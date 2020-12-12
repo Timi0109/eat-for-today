@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DotIndicator tests renders correctly 1`] = `
+<div>
+  <div
+    class="dotContainer"
+  >
+    <span
+      class="dot"
+    />
+    <span
+      class="dotEmpty"
+    />
+    <span
+      class="dotEmpty"
+    />
+    <span
+      class="dotEmpty"
+    />
+  </div>
+</div>
+`;

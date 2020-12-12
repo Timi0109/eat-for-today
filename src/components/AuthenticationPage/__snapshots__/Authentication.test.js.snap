@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Authentication tests renders correctly 1`] = `
+<div>
+  <div
+    class="main"
+  >
+    <div
+      class="menu"
+    >
+      <nav
+        class="Nav"
+      >
+        <a
+          class="Nav-child"
+          href="/"
+        >
+          Home
+        </a>
+        <a
+          class="Nav-child"
+          href="/recipes"
+        >
+          Recipe
+        </a>
+        <a
+          class="Nav-child"
+          href="/login"
+        >
+          LogIn
+        </a>
+      </nav>
+      <h2
+        class="title"
+      >
+        EatToday
+      </h2>
+    </div>
+    <div
+      class="content"
+    >
+      <div
+        class="tabContainer"
+      >
+        <button
+          class="signUpTab"
+        >
+          Sign Up
+        </button>
+        <button
+          class="logInTabActive"
+        >
+          Login
+        </button>
+      </div>
+      <div
+        class="box"
+      >
+        <form>
+          <input
+            class="username"
+            placeholder="Username"
+            required=""
+          />
+          <br />
+          <input
+            class="password"
+            placeholder="Password"
+            required=""
+            type="password"
+          />
+          <br />
+          <button
+            class="loginBtn"
+            type="submit"
+          >
+             LOGIN 
+          </button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="footer"
+    >
+      <p
+        class="title"
+      >
+        EATTODAY.COM
+      </p>
+      <div
+        class="container"
+      >
+        <div>
+          <p
+            class="subTitle"
+          >
+            About Us
+          </p>
+          <p>
+            Home
+          </p>
+          <p>
+            How It Works
+          </p>
+        </div>
+        <div>
+          <p
+            class="subTitle"
+          >
+            Contact Us
+          </p>
+          <p>
+            Linkedin
+          </p>
+          <p>
+            Twitter
+          </p>
+          <p>
+            Wechat
+          </p>
+        </div>
+      </div>
+      <p
+        class="right"
+      >
+        @2020 EATTODAY.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FoodContent tests renders correctly 1`] = `
+<div>
+  <div
+    class="main"
+  >
+    <div
+      class="menu"
+    >
+      <nav
+        class="Nav"
+      >
+        <a
+          class="Nav-child"
+          href="/"
+        >
+          Home
+        </a>
+        <a
+          class="Nav-child"
+          href="/recipes"
+        >
+          Recipe
+        </a>
+        <a
+          class="Nav-child"
+          href="/login"
+        >
+          LogIn
+        </a>
+      </nav>
+      <h2
+        class="title"
+      >
+        EatToday
+      </h2>
+    </div>
+    <div
+      class="content"
+    >
+      <div
+        class="tabContainer"
+      >
+        <button
+          class="signUpTab"
+        >
+          Sign Up
+        </button>
+        <button
+          class="logInTabActive"
+        >
+          Login
+        </button>
+      </div>
+      <div
+        class="box"
+      >
+        <form>
+          <input
+            class="username"
+            placeholder="Username"
+            required=""
+          />
+          <br />
+          <input
+            class="password"
+            placeholder="Password"
+            required=""
+            type="password"
+          />
+          <br />
+          <button
+            class="loginBtn"
+            type="submit"
+          >
+             LOGIN 
+          </button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="footer"
+    >
+      <p
+        class="title"
+      >
+        EATTODAY.COM
+      </p>
+      <div
+        class="container"
+      >
+        <div>
+          <p
+            class="subTitle"
+          >
+            About Us
+          </p>
+          <p>
+            Home
+          </p>
+          <p>
+            How It Works
+          </p>
+        </div>
+        <div>
+          <p
+            class="subTitle"
+          >
+            Contact Us
+          </p>
+          <p>
+            Linkedin
+          </p>
+          <p>
+            Twitter
+          </p>
+          <p>
+            Wechat
+          </p>
+        </div>
+      </div>
+      <p
+        class="right"
+      >
+        @2020 EATTODAY.
+      </p>
+    </div>
+  </div>
+</div>
+`;
