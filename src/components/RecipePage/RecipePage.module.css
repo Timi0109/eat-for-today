@@ -20,7 +20,6 @@
     
 }
 .kichenImg{
-    /* margin-top: 10px; */
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -28,6 +27,8 @@
     font-family: 'Cabin', sans-serif;
     background-image: url("../../assets/1607637382242.jpg");
     height: 300px;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 

@@ -34,6 +34,15 @@
     width: 100%;
 }
 
+.title:hover .meat{
+    color: #ea86b6;
+}
+
+.title:hover .veggies{
+    color: #ea86b6;
+}
+
+
 .recipeName{
     font-size: 35px;
     font-weight: bold;
@@ -48,13 +57,7 @@
 
 .meat, .veggies{
     color: rgb(114, 113, 113);
-}
-
-.veggies:hover{
-    color: #ea86b6;
-}
-.meat:hover{
-    color: #ea86b6;
+    font-size: 20px;
 }
 
 .recipeImg{
@@ -70,15 +73,28 @@
     float: left;
 }
 
+.searchContainer{
+    margin-bottom: 20px;
+}
+
 .searchInput{
     background-color: transparent;
     width: 98%;
-    margin-top: 20px;
     height: 40px;
     outline: none;
-    padding-left: 20px;
-    border: 0px;
-    font-size: large;
+    border-color: transparent;
+    border-bottom: 1px solid silver;
+    font-size: 20px;
+}
+.searchInput:hover{
+    border-bottom: 4px solid #ea86b6;
+    color: #ea86b6;
+}
+.searchInput::-webkit-input-placeholder {
+    color: silver;
+}
+.searchInput:hover::-webkit-input-placeholder {
+    color: #ea86b6;
 }
 
 hr{

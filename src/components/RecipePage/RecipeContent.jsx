@@ -1,10 +1,31 @@
 import React, {useState} from "react";
 import { Link,useLocation } from 'react-router-dom';
 import styles from "./RecipeContent.module.css";
+import TextField from '@material-ui/core/TextField';
+import {withStyles } from "@material-ui/core/styles";
+import { pink } from '@material-ui/core/colors';
 
 const RecipeContent = ({food, recipes}) => {
-    // console.log(recipes)
-    // console.log(useLocation());
+  
+const CssTextField = withStyles({
+    root: {
+        '& .MuiInput-underline:before':{
+            borderBottomColor: "#ea86b6",
+            "&:hover": {
+                borderBottomColor: "#ea86b6",
+            },
+        },
+        '& label.Mui-focused': {
+            color: "#ea86b6"
+        },
+        '& .MuiInput-underline:after': {
+            borderBottomColor: "#ea86b6",
+        }
+        
+    },
+   
+  })(TextField);
+
     const meat = food.Meat !== undefined ?food.Meat.toLowerCase() :null;
     const veggies = food.Veggies !== undefined ?food.Veggies.toLowerCase() :null;
     const others = food.Others !== undefined ?food.Others.toLowerCase() :null;
@@ -26,11 +47,16 @@ const RecipeContent = ({food, recipes}) => {
                                             (x.veggies !== undefined && x.veggies.toLowerCase().includes(filterName.toLowerCase())) || 
                                             (x.others !== undefined && x.others.toLowerCase().includes(filterName.toLowerCase())));
     }
-    
+
     return (
         <div className={styles.contentContainer}>
-                <input className={styles.searchInput} placeholder="Search by name" onChange={(e) => setFilterName(e.target.value)}></input>
-                <hr></hr> 
+              
+                <div className={styles.searchContainer}> 
+                    {/* <CssTextField  className={styles.searchInput} id="custom-css-standard-input" variant="standard" label="Search by name" onChange={(e) => {setFilterName(e.target.value)}}></CssTextField> */}
+                    {/* <CssTextField className={styles.searchInput} label="Search by name" variant="outlined"  onChange={(e) => {setFilterName(e.target.value)}}/> */}
+                    <input className={styles.searchInput} placeholder="Search by name" onChange={e => {setFilterName(e.target.value)}}></input>
+                </div>
+            
                 <div className={styles.listContainer}>
                     <div className={styles.outerRecipeContainer} >
                     {filterRecipe.map((item, id)=> {

@@ -1,15 +1,20 @@
 import React from "react"
-import MenuBar from "../MenuBar.jsx";
+import MenuBar from "../MenuBar/MenuBar.jsx";
 import styles from "./HomePage.module.css";
 import FoodContent from "./FoodContent";
 import Title from "../Title.jsx";
-import Footer from "../Footer.jsx";
+import Footer from "../Footer/Footer.jsx";
+import {userHistory, useLocation, useHistory} from "react-router-dom";
 
 const HomePage = () => {
+    let location = useLocation();
+    let history = useHistory();
+    console.log(location);
+    console.log(history);
     return (
         <div className={styles.homePage}>
             <header className={styles.header}>
-                <MenuBar className={styles.menuBar}></MenuBar> 
+                <MenuBar></MenuBar> 
                 <Title></Title>
             </header>
             <div className={styles.pageTitleContainer}>

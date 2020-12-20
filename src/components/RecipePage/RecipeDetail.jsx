@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import {Link, useLocation, useHistory} from "react-router-dom";
-import MenuBar from "../MenuBar.jsx";
+import MenuBar from "../MenuBar/MenuBar.jsx";
 import Title from "../Title.jsx";
 import styles from "./RecipeDetail.module.css";
-import Footer from "../Footer.jsx";
+import Footer from "../Footer/Footer.jsx";
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 

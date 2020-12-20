@@ -63,20 +63,17 @@ const Form = () => {
                             <OtherFood food={food} setFood={setFood} setOthersQt={setOthersQt}></OtherFood>
 
                             <div className={styles.allergy}>
-                                <div className={styles.inputContainer}>
-                                    
-                                        
-                                        <label className={styles.foodLabel}>Allergy</label>
-                                        <input className={styles.foodInput} placeholder="Enter name" onChange={e => setAllergy(e.target.value)}></input>
-                                        <label className={styles.qtLabel}>Qt</label>
-                                        <input  className={styles.qtInput} placeholder="Enter quantity" onChange={e => setAllergyQt(e.target.value)}></input>
-                                        <select>
-                                            <option value="g">g</option>
-                                            <option value="kg">kg</option>
-                                            <option value="lbs">lbs</option>
-                                            <option value="lb">lb</option>
-                                        </select>
-
+                                <div className={styles.inputContainer}> 
+                                    <label className={styles.foodLabel}>Allergy</label>
+                                    <input className={styles.foodInput} placeholder="Enter name" onChange={e => setAllergy(e.target.value)}></input>
+                                    <label className={styles.qtLabel}>Qt</label>
+                                    <input  className={styles.qtInput} placeholder="Enter quantity" onChange={e => setAllergyQt(e.target.value)}></input>
+                                    <select>
+                                        <option value="g">g</option>
+                                        <option value="kg">kg</option>
+                                        <option value="lbs">lbs</option>
+                                        <option value="lb">lb</option>
+                                    </select>
                                 </div>
                             </div>
                         {/* </div> */}

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Title from "../Title.jsx";
 import styles from "./Authentication.module.css";
-import MenuBar from "../MenuBar.jsx";
+import MenuBar from "../MenuBar/MenuBar.jsx";
 import {useHistory} from "react-router-dom";
 import { TextField } from '@material-ui/core';
-import Footer from "../Footer.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 const Authentication = () => {
   const [page, setPage] = useState({ isLoginPage: true });

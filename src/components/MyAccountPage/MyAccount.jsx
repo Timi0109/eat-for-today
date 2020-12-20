@@ -1,9 +1,9 @@
 import React, { useState,useEffect } from "react";
 import RecipeContent from "../RecipePage/RecipeContent.jsx";
 import Title from "../Title.jsx";
-import MenuBar from "../MenuBar.jsx";
+import MenuBar from "../MenuBar/MenuBar.jsx";
 import styles from "./MyAccountPage.module.css";
-import Footer from "../Footer.jsx";
+import Footer from "../Footer/Footer.jsx";
 import {userHistory, useLocation, useHistory} from "react-router-dom";
 
 

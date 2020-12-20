@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
 import styles from "./RecipePage.module.css";
-import MenuBar from "../MenuBar.jsx";
+import MenuBar from "../MenuBar/MenuBar.jsx";
 import Title from "../Title.jsx";
 import Form from "./Form.jsx";
-import Footer from "../Footer.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 const RecipePage = () => {
     return (
